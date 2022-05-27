@@ -1,18 +1,18 @@
 <h1 align="center">Tournament Game Generator programme.</h1>
 
-#### Programme for the project.
+### Programme for the project.
 
 This is a simple game generator programme which I got to write as a project for the [programmingexpert.io](https://www.programmingexpert.io/).The programme is written in Python with the Object Oriented Programminge style.
 
-#### How to run the programme?
+### How to run the programme?
 
 To run the programe simple download a `generator_oop.py` file and run it in your terminal. You can do it or clone it by clicking on the green `code` button at the top right side.
 
-#### The programme assumes...
+### The programme assumes...
 
 The programme assumes that a user enters as valid data as it asks to do. For example if programe asks to enter number of teams it assums that a user enters a integer and not a string. It does not make such checks.
 
-#### Checks made by the programme:
+### Checks made by the programme:
 
 - A minimum number of teams.
 - If the team name is made minimum of two characters.
@@ -20,11 +20,11 @@ The programme assumes that a user enters as valid data as it asks to do. For exa
 - Minimum number of the games.
 - Maximum and minimum number of the wins teams has won.
 
-#### Programme result.
+### Programme result.
 
 The programme finally generates a table in which the team on the first place playes to the team on the last place, a team on the second place plays to the team on the before last place and so on.
 
-#### Example of the programme:
+### Example of the programme:
 
 ```
 Enter the number of teams in the tournament: 1
