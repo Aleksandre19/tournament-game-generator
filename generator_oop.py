@@ -83,6 +83,7 @@ class GameGenerator:
         # Calculating range of the for loop
         paring_range = len(sorted_by_wins) // 2
 
+        print("Generating the games to be played in the first round of the tournament...")
         for key in range(0, paring_range):
             # Calculating a last index of the list
             last_key = len(sorted_by_wins) - 1 - key
