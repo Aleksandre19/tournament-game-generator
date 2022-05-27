@@ -68,10 +68,27 @@ class GameGenerator:
                     if count >= len(self.team_names):
                         count = 0
                         finished = True
+                        self.game_generator(team_names)
                         break
 
             if finished:
                 break
+
+    def game_generator(self,  team_names):
+        self.team_names = team_names
+        # Sorting a teams by wins
+        sorted_by_wins = sorted(
+            self.team_names.items(), reverse=True, key=lambda item: item[1])
+
+        # Calculating range of the for loop
+        paring_range = len(sorted_by_wins) // 2
+
+        for key in range(0, paring_range):
+            # Calculating a last index of the list
+            last_key = len(sorted_by_wins) - 1 - key
+
+            print(
+                f"Home: {sorted_by_wins[last_key][0]} VS Away: {sorted_by_wins[key][0]}")
 
 
 GameGenerator()
